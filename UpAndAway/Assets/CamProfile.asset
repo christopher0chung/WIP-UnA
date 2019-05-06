@@ -25,7 +25,7 @@ MonoBehaviour:
         motionVectorsResolution: 24
         motionVectorsAmplitude: 64
   fog:
-    m_Enabled: 0
+    m_Enabled: 1
     m_Settings:
       excludeSkybox: 1
   antialiasing:
@@ -79,9 +79,9 @@ MonoBehaviour:
   motionBlur:
     m_Enabled: 0
     m_Settings:
-      shutterAngle: 292.6
+      shutterAngle: 250
       sampleCount: 10
-      frameBlending: 0.359
+      frameBlending: 0.25
   eyeAdaptation:
     m_Enabled: 0
     m_Settings:
@@ -310,11 +310,11 @@ MonoBehaviour:
       spectralTexture: {fileID: 0}
       intensity: 0.05
   grain:
-    m_Enabled: 0
+    m_Enabled: 1
     m_Settings:
       colored: 1
-      intensity: 0.5
-      size: 1
+      intensity: 0.025
+      size: 0.34
       luminanceContribution: 0.8
   vignette:
     m_Enabled: 1

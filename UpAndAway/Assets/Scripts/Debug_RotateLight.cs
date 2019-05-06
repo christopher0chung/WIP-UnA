@@ -11,6 +11,8 @@ public class Debug_RotateLight : MonoBehaviour {
 
     private float applied;
 
+    public float angleVal;
+
     void Awake()
     {
         sun = GetComponentInChildren<Light>();
@@ -18,7 +20,10 @@ public class Debug_RotateLight : MonoBehaviour {
 
     void Update () {
 
-        transform.Rotate(rotationRate * Time.deltaTime);
+        angleVal += rotationRate.x * Time.deltaTime;
+        angleVal = (angleVal + 360) % 360;
+
+        transform.rotation = Quaternion.Euler(angleVal, 0, 0);
 
         //if (Input.GetKeyDown(KeyCode.Space))
         //    transform.Rotate(Vector3.right * 15);
